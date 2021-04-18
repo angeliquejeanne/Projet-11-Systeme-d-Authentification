@@ -14,7 +14,9 @@
         <button class="btn-connection">Se connecter</button>
         <button class="btn-deco">Se déconnecter</button>
     </div>
+
     <h1>Bienvenue, inscrivez-vous ou connectez-vous.</h1>
+
     <p class="info">Contenu public.</p>
 
     <form class="form-inscription">
@@ -42,10 +44,30 @@
     </form>
 
 
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDR0T2dbeaWHKDVlvB1e5QTSf5z9HGjlA8",
+        authDomain: "projet-11-systeme-auth.firebaseapp.com",
+        projectId: "projet-11-systeme-auth",
+        storageBucket: "projet-11-systeme-auth.appspot.com",
+        messagingSenderId: "338547865580",
+        appId: "1:338547865580:web:2651f1761ade1ab95cf2c9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const authentification = firebase.auth();
+    const database = firebase.firestore();
+    </script>
 
     <script src="script.js"></script>
 </body>
