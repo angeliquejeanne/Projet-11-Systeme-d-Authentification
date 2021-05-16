@@ -53,20 +53,24 @@
         https://firebase.google.com/docs/web/setup#available-libraries -->
 
     <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyDR0T2dbeaWHKDVlvB1e5QTSf5z9HGjlA8",
-        authDomain: "projet-11-systeme-auth.firebaseapp.com",
-        projectId: "projet-11-systeme-auth",
-        storageBucket: "projet-11-systeme-auth.appspot.com",
-        messagingSenderId: "338547865580",
-        appId: "1:338547865580:web:2651f1761ade1ab95cf2c9"
-    };
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBYwudIWWAaSO5d_7DVt66LS-lWO7RhxGc",
+          authDomain: "projet-11-syst-auth.firebaseapp.com",
+          projectId: "projet-11-syst-auth",
+          storageBucket: "projet-11-syst-auth.appspot.com",
+          messagingSenderId: "93391942103",
+          appId: "1:93391942103:web:6233634d9071f9d6311b92"
+        };
+          
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
+
     const authentification = firebase.auth();
-    const database = firebase.firestore();
+    const db = firebase.firestore();
+
+    // console.log(auth);
     </script>
 
     <script src="script.js"></script>
